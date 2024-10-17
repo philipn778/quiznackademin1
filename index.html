@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <div id="start-page" class="page active">
+        <h1>Välkommen till QuizApp</h1>
+        <p>Välj ett ämne för att börja quizen:</p>
+        <div class="subjects">
+            <button class="start-quiz" data-subject="JavaScript">Motocross Quiz</button>
+            <button class="start-quiz" data-subject="HTML">Mat Quiz</button>
+        </div>
+    </div>
+
+    
+    <div id="quiz-page" class="page">
+        <h2 id="quiz-title"></h2>
+        <div id="question-container">
+            <p id="question-text"></p>
+            <div id="options-container"></div>
+        </div>
+        <button id="next-question">Nästa fråga</button>
+    </div>
+
+    
+    <div id="result-page" class="page">
+        <h2>Resultat</h2>
+        <p>Du fick <span id="score"></span> av 5 rätt!</p>
+        <button id="restart-quiz">Starta om</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
